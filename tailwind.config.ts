@@ -61,7 +61,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom board colors
+				'board-bg': 'hsl(var(--board-background))',
+				'list-bg': 'hsl(var(--list-background))',
+				'list-border': 'hsl(var(--list-border))',
+				'card-shadow': 'hsl(var(--card-shadow))',
+				'hover-bg': 'hsl(var(--hover-bg))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +90,48 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'scale-in': {
+					'0%': {
+						transform: 'scale(0.95)',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'scale(1)',
+						opacity: '1'
+					}
+				},
+				'drag-ghost': {
+					'0%': {
+						transform: 'rotate(5deg) scale(1.02)',
+						opacity: '0.8'
+					},
+					'100%': {
+						transform: 'rotate(5deg) scale(1.02)',
+						opacity: '0.8'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.3s ease-out',
+				'scale-in': 'scale-in 0.2s ease-out',
+				'drag-ghost': 'drag-ghost 0.2s ease-out'
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-subtle': 'var(--gradient-subtle)'
 			}
 		}
 	},

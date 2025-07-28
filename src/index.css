@@ -8,35 +8,46 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 220 25% 97%;
+    --foreground: 222 15% 25%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 222 15% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 222 15% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 240 75% 60%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 230 20% 94%;
+    --secondary-foreground: 222 15% 35%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 230 20% 94%;
+    --muted-foreground: 215 16% 46%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 260 75% 65%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 91%;
+    --input: 0 0% 100%;
+    --ring: 240 75% 60%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+    
+    /* Custom board colors */
+    --board-background: 230 35% 92%;
+    --list-background: 0 0% 100%;
+    --list-border: 220 13% 87%;
+    --card-shadow: 220 25% 85%;
+    --hover-bg: 240 75% 97%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(240 75% 60%) 0%, hsl(260 75% 65%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(230 35% 94%) 0%, hsl(230 25% 89%) 100%);
 
     --sidebar-background: 0 0% 98%;
 
